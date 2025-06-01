@@ -2,14 +2,8 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const whitelist = [
-  298743938,
-  1632866443
-];
-
-const bannedgames = [
-  0,
-];
+const whitelist = [298743938, 1632866443];
+const bannedgames = [0];
 
 app.get("/", (req, res) => {
   res.send("WhitelistAPI is online!");
